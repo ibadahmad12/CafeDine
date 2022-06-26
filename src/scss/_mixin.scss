@@ -1,0 +1,79 @@
+@use "./variables" as *;
+@use "./breakpoints" as *;
+
+@mixin flex($direction, $justify-content, $aligin-item, $column-gap: 0, $row-gap: 0) {
+   display: flex;
+   flex-direction: $direction;
+   align-items: $aligin-item;
+   justify-content: $justify-content;
+   column-gap: $column-gap;
+   row-gap: $row-gap;
+}
+
+@mixin heading-text() {
+   font-size: $heading-text-size;
+   font-family: $font-family;
+   font-weight: $heading-text-style;
+   text-align: center;
+   color: $black;
+}
+
+@mixin heading {
+   font-size: $heading-text-size;
+   letter-spacing: 0.02cm;
+   margin-bottom: 10px;
+   color: rgb(243, 64, 64);
+   font-family: "Cookie";
+   padding: 0;
+   text-align: center;
+}
+
+@mixin subHeading {
+   padding: 0;
+   font-size: $heading-text-size;
+   font-family: "Cardo";
+   color: black;
+   line-height: 1.2;
+   max-width: 60vw;
+   text-align: center;
+   margin: 0 auto 2.5rem;
+
+   @include mobile {
+      max-width: 80vw;
+   }
+}
+
+@mixin button() {
+   display: block;
+   margin: 20px 0;
+   outline: none;
+   border: none;
+   height: 50px;
+   padding: 0 40px;
+   transition: 0.5s all;
+   cursor: pointer;
+   background-color: rgb(243, 64, 64);
+   color: white;
+   font-weight: medium;
+   font-size: 15px;
+   text-transform: uppercase;
+   letter-spacing: 0.02cm;
+
+   &:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+   }
+
+   @content;
+}
+
+@mixin text-ellipsis {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+@mixin overlay {
+   background-color: rgba($color: #000000, $alpha: 0.7);
+}

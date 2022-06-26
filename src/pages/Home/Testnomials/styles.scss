@@ -1,0 +1,75 @@
+@use "../../../scss" as *;
+
+.swiper {
+   width: 100%;
+   height: auto;
+   position: relative;
+
+   .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #f8f6f2;
+   }
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+   background-color: black;
+}
+
+.testnomials__wrapper {
+   margin-bottom: 6rem;
+   width: 100vw;
+   padding: 6rem 0;
+   background-color: #f8f6f2;
+
+   .heading {
+      @include heading();
+   }
+
+   .sub-heading {
+      @include subHeading();
+   }
+
+   .testnomials__slider {
+      height: 100%;
+
+      .testnomial {
+         @include flex(column, center, center, 10px, 0px);
+
+         h2 {
+            color: gray;
+            text-align: center;
+            font-size: $normal-text-size;
+            margin: 30px auto;
+            max-width: 70%;
+            font-weight: lighter;
+            font-family: "Montserrat", sans-serif;
+         }
+
+         img {
+            width: 100px;
+            height: auto;
+            min-height: auto;
+            object-fit: cover;
+            object-position: center;
+         }
+
+         h5 {
+            margin-top: 5px;
+            color: black;
+            font-size: 18px;
+            font-weight: 700;
+         }
+
+         p {
+            font-size: 14px;
+            color: gray;
+            padding: 0;
+            font-weight: 500;
+            text-align: left;
+            margin: 0 0 60px;
+            font-size: $small-text-size;
+         }
+      }
+   }
+}

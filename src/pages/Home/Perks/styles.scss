@@ -1,0 +1,43 @@
+@use "../../../scss" as *;
+
+.perks__wrapper {
+   width: 80vw;
+   margin: -5rem auto 6rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+   .perks {
+      z-index: 10;
+      background-color: white;
+      border: 0.2px solid rgb(226, 225, 225);
+      padding: 3rem 3rem;
+      text-align: left;
+      @include flex(column, center, center, 0px, 10px);
+
+      &:nth-child(even) {
+         background-color: #f8f8f8;
+      }
+
+      img {
+         height: 50px;
+         width: 50px;
+         object-fit: cover;
+         object-position: center;
+      }
+
+      h6 {
+         color: black;
+         font-size: 21px;
+         font-weight: 700;
+      }
+
+      p {
+         font-size: 15px;
+         color: gray;
+         padding: 0;
+         max-width: 100%;
+         font-weight: lighter;
+         font-family: "Montserrat", sans-serif;
+      }
+   }
+}

@@ -1,0 +1,58 @@
+export const dishesData = [
+   {
+      id: "1",
+      img: "https://demo.themefisher.com/cafedine/images/menu/menu-1.jpg",
+      dish: "Vitello Tonato",
+      ingrediants: "Chinese mustard / Chipotle aiol",
+      price: "23",
+   },
+   {
+      id: "2",
+      img: "https://demo.themefisher.com/cafedine/images/menu/menu-2.jpg",
+      dish: "Crema Di Pomodoro",
+      ingrediants: "Chinese mustard / Chipotle aiol",
+      price: "34",
+   },
+   {
+      id: "3",
+      img: "https://demo.themefisher.com/cafedine/images/menu/menu-3.jpg",
+      dish: "Oatmeal Cookie",
+      ingrediants: "Chinese mustard / Chipotle aiol",
+      price: "13",
+   },
+   {
+      id: "4",
+      img: "https://demo.themefisher.com/cafedine/images/menu/menu-4.jpg",
+      dish: "Seasonal Soup",
+      ingrediants: "Chinese mustard / Chipotle aiol",
+      price: "10",
+   },
+   {
+      id: "5",
+      img: "https://demo.themefisher.com/cafedine/images/menu/menu-5.jpg",
+      dish: "Pizza Pane",
+      ingrediants: "Chinese mustard / Chipotle aiol",
+      price: "20",
+   },
+   {
+      id: "6",
+      img: "https://demo.themefisher.com/cafedine/images/menu/menu-6.jpg",
+      dish: "Carpacio",
+      ingrediants: "Chinese mustard / Chipotle aiol",
+      price: "28",
+   },
+   {
+      id: "7",
+      img: "https://demo.themefisher.com/cafedine/images/menu/menu-7.jpg",
+      dish: "Insalata Rucola",
+      ingrediants: "Chinese mustard / Chipotle aiol",
+      price: "15",
+   },
+   {
+      id: "8",
+      img: "https://demo.themefisher.com/cafedine/images/menu/menu-8.jpg",
+      dish: "Loaded Stake",
+      ingrediants: "Chinese mustard / Chipotle aiol",
+      price: "35",
+   },
+];

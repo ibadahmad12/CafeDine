@@ -1,0 +1,46 @@
+@use "../../../scss" as *;
+
+.about {
+   width: 80vw;
+   margin: 0 auto 6rem;
+
+   .heading {
+      @include heading();
+   }
+
+   .sub-heading {
+      @include subHeading();
+   }
+
+   .history-cards {
+      @include flex(row, center, center, 2rem, 2rem);
+      flex-wrap: wrap;
+
+      .card {
+         img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            object-position: center;
+         }
+
+         h6 {
+            margin: 15px 0;
+            padding: 0;
+            font-size: 20px;
+            text-align: left;
+            font-weight: 700;
+         }
+
+         p {
+            width: 350px;
+            font-size: 15px;
+            margin-right: 10px;
+            padding: 0;
+            color: gray;
+            font-weight: lighter;
+            font-family: "Montserrat", sans-serif;
+         }
+      }
+   }
+}

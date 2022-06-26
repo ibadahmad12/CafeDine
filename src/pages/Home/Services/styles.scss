@@ -1,0 +1,49 @@
+@use "../../../scss" as *;
+
+.services__wrapper {
+   width: 80vw;
+   margin: 0 auto 6rem;
+
+   .heading {
+      @include heading();
+   }
+
+   .sub-heading {
+      @include subHeading();
+   }
+
+   .services__inner_wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      text-align: center;
+      grid-gap: 0px 0px;
+
+      .service {
+         background-color: white;
+         padding: 3rem 3rem;
+         @include flex(column, center, center, 20px, 10px);
+
+         img {
+            width: 50px;
+
+            height: 50px;
+            object-fit: cover;
+            object-position: center;
+         }
+
+         h6 {
+            color: black;
+            font-size: 21px;
+            font-weight: 700;
+         }
+
+         p {
+            font-size: 15px;
+            color: gray;
+            padding: 0;
+            font-weight: lighter;
+            font-family: "Montserrat", sans-serif;
+         }
+      }
+   }
+}
